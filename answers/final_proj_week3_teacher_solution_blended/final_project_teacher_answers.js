@@ -96,7 +96,7 @@ function getUserFactors() {
     while (true) {
         console.log(`Enter the earth value of your ${factorType} in ${factorUnit}:`);
         factorValue = parseFloat(prompt(">>").trim().toLowerCase());
-        console.log(typeof (factorValue));
+        // console.log(typeof (factorValue));
         if (isNaN(factorValue) || (factorValue > 1000 || factorValue < 0)) {
             console.error("Please enter a valid number");
         } else {

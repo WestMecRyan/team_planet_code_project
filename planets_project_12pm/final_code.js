@@ -42,7 +42,7 @@ function getUserInput() {
     while (true) {
         if (factorType !== "pushups") {
             console.log("What measurement system 1 for metric 2 for imperial");
-            factorSystem = prompt(">>" );
+            factorSystem = prompt(">>" ).trim().toLowerCase();
         }
         if (!isNaN(factorSystem) && 4 > factorSystem > 0) {
             switch (factorSystem) {
