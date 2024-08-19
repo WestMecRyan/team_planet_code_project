@@ -59,8 +59,6 @@ function getUserFactors() {
         if (factorType !== "pushups") {
             console.log("What measurement system do you want to use? (enter '1' for metric, enter '2' for imperial(American)");
             factorSystem = prompt(">>").trim().toLowerCase();
-        } else {
-            factorSystem = "3";
         }
         if (!isNaN(factorSystem) && factorSystem > 0) {
 

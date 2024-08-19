@@ -18,8 +18,8 @@ function showUserFactors(factorType, factorPlanets, factorUnit, factorValue) {
 }
 
 function getUserInput() {
-    let param1;
-    let param2;
+    let factorType = "pushups";
+    let factorSystem;
     let param3;
     let param4;
     while (true) {
@@ -40,22 +40,40 @@ function getUserInput() {
         }
     }
     while (true) {
-        console.log("What do you want for param2?");
-        param2 = prompt(">>");
-        if (!isNaN(param2)) {
-            switch (param2) {
+        if (factorType !== "pushups") {
+            console.log("What measurement system 1 for metric 2 for imperial");
+            factorSystem = prompt(">>" );
+        }
+        if (!isNaN(factorSystem) && 4 > factorSystem > 0) {
+            switch (factorSystem) {
                 case "1":
+                    factorSystem = "metric";
                     // something
                     break;
                 case "2":
+                    factorSystem = "imperial";
                     // something
                     break;
                 default:
+                    break;
                 // something if number isn't accounted for
             }
+            break;
+        } else {
+            console.error("Please enter correctly according to prompt");
         }
-        break;
+
     }
+    let factorUnit = "repetitions";
+    if (factorSystem === "metric") {
+        if (factorType === "weight") {
+            factorUnit = "kg"
+        } else if (factorType === "jump") {
+            factorUnit = "cm"
+        }
+    } else if (factorSystem === "imperial") {
+
+      }
     while (true) {
         console.log("What do you want for param3 ?");
         param3 = prompt(">>");
@@ -66,7 +84,7 @@ function getUserInput() {
         param4 = prompt(">>");
         break;
     }
-    showUserFactors(param1, param2, param3, param4);
+    showUserFactors(factorType, factorSystem, factorUnit, param4);
 }
 
 global.getUserInput = getUserInput;
