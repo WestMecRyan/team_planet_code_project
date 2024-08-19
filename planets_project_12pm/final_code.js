@@ -33,7 +33,11 @@ function getUserInput() {
                 break;
             }
         }
-        break;
+        if (isMatch) {
+            break;
+        } else {
+            console.error("Tell the user what to do to correct their code");
+        }
     }
     while (true) {
         console.log("What do you want for param2?");

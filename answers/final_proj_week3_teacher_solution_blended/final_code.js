@@ -70,7 +70,8 @@ function getUserFactors() {
     while (true) {
         console.log(`Enter the earth value of your ${factorType}:`);
         const factorValue = parseFloat(prompt(">>").trim().toLowerCase().toFixed(2));
-        if (isNaN(factorValue) || factorValue > 1000) {
+        console.log(!isNaN(factorValue));
+        if (isNaN(factorValue) || (factorValue > 1000 || factorValue < 0)) {
             console.error("Please enter a valid number");
         } else {
             break;

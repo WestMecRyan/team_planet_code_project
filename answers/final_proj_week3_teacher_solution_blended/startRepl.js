@@ -11,7 +11,7 @@ const repl = require('repl');
 const fs = require('fs');
 const path = require('path');
 
-const scripts = ['./final_code3.js'];
+const scripts = ['./final_project_teacher_answers.js'];
 
 const loadFunctions = () => {
     scripts.forEach(script => {
