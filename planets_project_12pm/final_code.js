@@ -7,11 +7,15 @@ const alienGravityFactors = require('./utils/alienGravityFactors.js');
 
 // Your factorType is finalValue ___measurement__ on planet in the __earth solar system___
 function showUserFactors(factorType, factorPlanets, factorUnit, factorValue) {
- // make object to hold final values
-// in some for loop
+    // make object to hold final values
+
+    // make calculation that will be passed to the final object as final values
+
+    // do any other final variable manipulation
+    // in some for loop
     console.log(`your ${factorType} is ${finalValue} ${factorUnit} on ${planet} in ${factorPlanets}`)
     getUserInput();
- }
+}
 
 function getUserInput() {
     let param1;
@@ -43,7 +47,7 @@ function getUserInput() {
                     // something
                     break;
                 default:
-                    // something if number isn't accounted for
+                // something if number isn't accounted for
             }
         }
         break;
