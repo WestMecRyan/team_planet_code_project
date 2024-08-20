@@ -1,0 +1,15 @@
+{
+  "name": "modular_planet_calculator",
+  "version": "1.0.0",
+  "description": "A calculator app that shows your measurements on various planets.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec \"node\" startRepl.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Morales",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
