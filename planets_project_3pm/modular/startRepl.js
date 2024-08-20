@@ -1,9 +1,3 @@
-// Ensure nodemon is added to the PATH
-// `$env:PATH += ";C:\Users\your.user.name\AppData\Roaming\npm"`
-
-// Install nodemon globally
-// `npm i -g nodemon`
-
 // Command to run this script with nodemon
 // `nodemon --exec "node" startRepl.js`
 
