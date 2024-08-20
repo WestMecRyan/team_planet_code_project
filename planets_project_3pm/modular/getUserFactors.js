@@ -1,4 +1,7 @@
 const prompt = require('prompt-sync')();
+const alienGravityFactors = require('./utils/alienGravityFactors.js');
+const earthGravityFactors = require('./utils/earthGravityFactors.js');
+const showUserFactors = require('./showUserFactors.js');
 function getUserFactors() {
     let factorType;
     let factorValue;
